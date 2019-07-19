@@ -1,10 +1,10 @@
 ﻿
 <!doctype html>
-<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:website="http://ogp.me/ns/website" lang="en-US" itemscope itemtype="http://schema.org/WebPage" ><head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:website="http://ogp.me/ns/website" lang="en-US" itemscope itemtype="http://schema.org/WebPage" >
+ 
+ <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  
   <!-- This is Squarespace. --><!-- avenue-demo -->
 <base href="">
 <meta charset="utf-8" />
@@ -81,90 +81,50 @@
 
 
     <header id="header">
+     
       <div id="logo" data-content-field="site-title">
-        
-        <h1 class="logo"><a href="/portfolio">粆清</a></h1>
-        
-        
+        <h1 class="logo"><a href="/portfolio">粆清</a></h1> 
       </div>
-      <script>
-        Y.use('squarespace-ui-base', function(Y) {
-          Y.all("#header .logo, #header .logo-subtitle").each(function (text) {
-            text.plug(Y.Squarespace.TextShrink, {
-              parentEl: Y.one('#header'),
-              triggerWidth: 750
-            });
-          });
-        });
+	  <script>
+		Y.use('squarespace-ui-base', function(Y) {
+		  Y.all("#header .logo, #header .logo-subtitle").each(function (text) {
+			text.plug(Y.Squarespace.TextShrink, {
+			  parentEl: Y.one('#header'),
+			  triggerWidth: 750
+			});
+		  });
+		});
 
-        // Show spinner on page load if loading bookmarked url
-        if (window.location.hash && window.location.hash !== '#') {
-          document.querySelector('body').className += ' index-loading';
-        }
-      </script>
-      <div id="topNav" data-content-field="navigation">
-<nav class="main-nav">
-  <ul>
-  
-  
+		// Show spinner on page load if loading bookmarked url
+		if (window.location.hash && window.location.hash !== '#') {
+		  document.querySelector('body').className += ' index-loading';
+		}
+	  </script>
+     
+       <div id="topNav" data-content-field="navigation">
+			<nav class="main-nav">
+ 				     <ul>
+  						 <li class="index-collection active-link">
+                           <a href="/">作品</a>
+                         </li>
 
-      <li class="index-collection active-link">
+						<li class="blog-collection">
+						    <a href="/blog-avenue">文章</a>
+						</li>
 
-        
-          
-            <a href="/">作品</a>
-          
-        
+						 <li class="page-collection">
+						    <a href="/about-avenue">我</a>
+						 </li>
+                     </ul>
+            </nav>
+       </div>
 
-      </li>
-
-  
-
-      <li class="blog-collection">
-
-        
-
-          
-            <a href="/blog-avenue">文章</a>
-          
-
-          
-
-
-        
-
-      </li>
-
-  
-
-      <li class="page-collection">
-
-        
-
-          
-            <a href="/about-avenue">我</a>
-          
-
-          
-
-
-        
-
-      </li>
-
-  
-  
-  
-  </ul>
-</nav>
-</div>
-
-    </header>
+ </header>
 
     <div class="page-divider"></div>
 
     <div class="extra-wrapper page-header">
-      <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="Header Content: Work" data-type="block-field" id="page-header-56f054448259b594db0333d0"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+      <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="Header Content: Work" data-type="block-field" id="page-header-56f054448259b594db0333d0"></div>
     </div>
 
     <section id="page" role="main" data-content-field="main-content">
@@ -177,20 +137,18 @@
       
         <div class="project-meta">
           <h2 class="project-title">熊猫车服</h2>
-          <div class="project-description"><p>Proin facilisis elit vitae mollis faucibus. Proin vitae massa nec mauris dictum consequat. Maecenas congue non felis a malesuada. Phasellus ullamcorper laoreet felis eu viverra. In at tincidunt tortor. Praesent tempor eros vitae elit dignissim, vitae elementum dui dapibus. Duis tristique, ligula eget lobortis accumsan, nibh enim venenatis urna, a commodo elit ex ac urna.</p></div>
+          <div class="project-description">
+          	<p>Proin facilisis elit vitae mollis faucibus. Proin vitae massa nec mauris dictum consequat. Maecenas congue non felis a malesuada. Phasellus ullamcorper laoreet felis eu viverra. In at tincidunt tortor. Praesent tempor eros vitae elit dignissim, vitae elementum dui dapibus. Duis tristique, ligula eget lobortis accumsan, nibh enim venenatis urna, a commodo elit ex ac urna.</p>
+          </div>
         </div>
-        <div class="image-list">
         
-
+        <div class="image-list">
           <div class="image">
+             <img data-src="./images/image01.png" data-image="./images/image01.png" data-image-dimensions="3000x2000" data-image-focal-point="0.5,0.5" alt="image01.png"  class="loading" data-load="false"/>
+             <noscript><img src="./images/image01.png?format=500w"></noscript>
             
-              <img data-src="./images/image01.png" data-image="./images/image01.png" data-image-dimensions="3000x2000" data-image-focal-point="0.5,0.5" alt="image01.png"  class="loading" data-load="false"/>
-              <noscript><img src="./images/image01.png?format=500w"></noscript>
             
-            
-            <div class="image-meta">
-              
-              
+        	 <div class="image-meta">
             </div>
           </div>
         
@@ -202,23 +160,10 @@
             
             
             <div class="image-meta">
-              
-              
             </div>
           </div>
         
 
-          <div class="image">
-            
-              <img data-src="https://static1.squarespace.com/static/56d4a125e707eb7a02e4055f/56d4ac11e32140fc7fce60c7/56d5c368d51cd4fb8e534f8f/1456849781981/67.jpg" data-image="https://static1.squarespace.com/static/56d4a125e707eb7a02e4055f/56d4ac11e32140fc7fce60c7/56d5c368d51cd4fb8e534f8f/1456849781981/67.jpg" data-image-dimensions="3000x2000" data-image-focal-point="0.5,0.5" alt="67.jpg"  class="loading" data-load="false"/>
-              <noscript><img src="https://static1.squarespace.com/static/56d4a125e707eb7a02e4055f/56d4ac11e32140fc7fce60c7/56d5c368d51cd4fb8e534f8f/1456849781981/67.jpg?format=500w"></noscript>
-            
-            
-            <div class="image-meta">
-              
-              
-            </div>
-          </div>
         
         </div>
       
@@ -963,13 +908,13 @@
     </section>
 
     <div class="extra-wrapper page-footer">
-      <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="Footer Content: Work" data-type="block-field" id="page-footer-56f054448259b594db0333d0"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+      <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="Footer Content: Work" data-type="block-field" id="page-footer-56f054448259b594db0333d0"></div>
     </div>
 
     <div class="page-divider"></div>
 
     <footer id="footer">
-      <div class="sqs-layout sqs-grid-1 columns-1" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1398831422803" id="footerBlock"><div class="row sqs-row"><div class="col sqs-col-1 span-1"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-179f8c9da7aa428c1198"><div class="sqs-block-content"><p>Powered by <a href="http://www.squarespace.com">Squarespace</a></p></div></div></div></div></div>
+      <div class="sqs-layout sqs-grid-1 columns-1" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1398831422803" id="footerBlock"></div>
       
         
       

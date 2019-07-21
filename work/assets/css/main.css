@@ -525,7 +525,7 @@ textarea {
 body {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.4;
     font-size: 16px;
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
@@ -559,7 +559,7 @@ a, input, textarea, select {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #333;
     font-family: "Montserrat", sans-serif;
 }

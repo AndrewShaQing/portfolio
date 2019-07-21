@@ -9,8 +9,70 @@
   <meta name="keywords" content="shaqing, template, html, sass, jquery">
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css">
+  
+  
+  <!-- 弹出窗 -->
+  <style>
+.white_content {
+display: none;
+position: absolute;
+top: 10%;
+left: 25%;
+width: 50%;
+height: 80%;
+z-index:1002;
+overflow-y:scroll;
+}
+.white_content::-webkit-scrollbar{
+display:none;
+}
+.black_overlay {
+display: none;
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color:#000;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.close {
+
+width:100%;
+text-align:center;
+margin:0 0 -10 0;
+}
+  
+.close a {
+color:#FFFFFF;
+text-decoration:none;
+font-size:18px;
+font-weight:700;
+}
+
+
+
+</style>
+<!-- 弹出窗 -->
+
+
 </head>
 <body>
+ 
+ 
+<!-- 弹出窗 -->
+      
+       <a id="light" class="white_content" href="javascript:void(0)" onclick="hide('light')" >
+		   <div align="center";><img style="width:100%;" src="assets/img/work-victory.jpg" ></img></div>
+           <!--<div class="close"><a href="javascript:void(0)" onclick="hide('light')"> 关闭 </a></div>	-->
+		</a>
+        <a id="fade" class="black_overlay" href="javascript:void(0)" onclick="hide('light')" ></a>
+<!-- 弹出窗 -->
+        
+        
 
 <!-- 小窗口 手机 -->
 <div class="device-notification">
@@ -20,13 +82,14 @@
   </a>
   <p class="device-notification--message">请您使用大窗口或使手机纵向，可以体验完整功能。😄</p>
 </div>
+<!-- 小窗口 手机 -->
 
 <div class="perspective effect-rotate-left">
   <div class="container"><div class="outer-nav--return"></div>
     <div id="viewport" class="l-viewport">
       <div class="l-wrapper">
         <header class="header">
-          <a class="header--logo" href="#0">
+          <a class="header--logo" href="./index.html">
             <img src="assets/img/logo.png" alt="shaqing">
             <p>Sha Qing</p>
           </a>
@@ -41,7 +104,7 @@
             <li><span>作品</span></li>
             <li><span>博客</span></li>
             <li><span>联系我</span></li>
-<!--            <li><span>对我感兴趣</span></li>-->
+<!--        <li><span>对我感兴趣</span></li>-->
           </ul>
         </nav>
         <ul class="l-main-content main-content">
@@ -82,8 +145,10 @@
               <h2>精选作品</h2>
               <div class="work--lockup">
                 <ul class="slider">
+                 
+                 
                   <li class="slider--item slider--item-left">
-                    <a href="#0">
+                    <a href="javascript:void(0)" onclick="show('light')">
                       <div class="slider--item-image">
                         <img src="assets/img/work-victory.jpg" alt="Victory">
                       </div>
@@ -91,8 +156,10 @@
                       <p class="slider--item-description">作品01简介作品01简介作品01简介作品01简介</p>
                     </a>
                   </li>
+                
+                
                   <li class="slider--item slider--item-center">
-                    <a href="#0">
+                    <a href="javascript:void(0)" onclick="show('light')">
                       <div class="slider--item-image">
                         <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
                       </div>
@@ -100,8 +167,10 @@
                       <p class="slider--item-description">作品简介作品简介作品简介作品简介作品简介作品简介作品</p>
                     </a>
                   </li>
+                  
+                  
                   <li class="slider--item slider--item-right">
-                    <a href="#0">
+                    <a href="javascript:void(0)" onclick="show('light')">
                       <div class="slider--item-image">
                         <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
                       </div>
@@ -109,23 +178,7 @@
                       <p class="slider--item-description">作品简介作品简介作品简介作品简介作品简介作品简介作品简介</p>
                     </a>
                   </li>
-                   <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">作品03</p>
-                      <p class="slider--item-description">作品简介作品简介作品简介作品简介作品简介作品简介作品简介</p>
-                    </a>
-                  </li> <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">作品03</p>
-                      <p class="slider--item-description">作品简介作品简介作品简介作品简介作品简介作品简介作品简介</p>
-                    </a>
-                  </li>
+            
                 </ul>
                 <div class="slider--prev">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -164,7 +217,7 @@
                 <img src="assets/img/about-visual.png" alt="About Me">
               </div>
               <div class="about--options">
-                <a href="#0">
+                <a href="./blog/blog-detail-01.html" target="_blank">
                   <h3>博客01</h3>
                 </a>
                 <a href="#0">
@@ -194,10 +247,10 @@
               </div>
             </div>
           </li>
-          <li class="l-section section">
+<!--          <li class="l-section section">
             <div class="hire">
               <h2>您需要我做什么？</h2>
-              <!-- checkout formspree.io for easy form setup -->
+               checkout formspree.io for easy form setup 
               <form class="work-request">
                 <div class="work-request--options">
                   <span class="options-a">
@@ -278,11 +331,12 @@
                 <input type="submit" value="提 交">
               </form>
             </div>
-          </li>
+          </li>-->
         </ul>
       </div>
     </div>
   </div>
+  
   <ul class="outer-nav">
     <li class="is-active">首页</li>
     <li>作品</li>
@@ -292,8 +346,27 @@
   </ul>
 </div>
 
+<!-- 弹出窗 -->
+<script>
+function show(tag){
+var light=document.getElementById(tag);
+var fade=document.getElementById('fade');
+light.style.display='block';
+fade.style.display='block';	
+}
+
+function hide(tag){
+var light=document.getElementById(tag);
+var fade=document.getElementById('fade');
+light.style.display='none';
+fade.style.display='none';
+}
+</script>
+<!-- 弹出窗 -->
+
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
+
 </body>
 </html>

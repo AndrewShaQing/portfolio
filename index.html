@@ -210,7 +210,7 @@ font-weight:700;
                     </svg>
                   </span>
                 </a>
-                <img src="assets/img/about-visual.png" alt="About Me">
+                <img src="assets/img/blog-think.png" alt="About Me">
               </div>
               <div class="about--options">
                 <a href="./blog/blog-detail-01.html" target="_blank">
@@ -363,6 +363,54 @@ fade.style.display='none';
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
+
+
+<!--<script>
+import Cookies from 'js-cookie'
+import $ from 'jquery'
+$(function () {
+  // 距离顶部的距离
+  let scrollTop = 0
+  // 是否是从文章详情页后退回来的
+  if(Cookies.get('pre')) {
+     const pre = JSON.parse( Cookies.get('pre') )
+     scrollTop = Cookies.get('scrollTop') 
+     // 改变滚动条的位置
+     $(document).scrollTop(scrollTop)
+  }
+  // 鼠标点击大图或者标题跳转到详情页
+  $listsParent.on("click", ".head-map", function(e) {
+     e.stopPropagation()
+     Cookies.set('scrollTop', $(window).scrollTop())
+     window.location.href = 'blog/blog.html'
+  }
+});
+
+	
+/*返回上次浏览位置*/
+$(function () {
+var str = window.location.href;
+str = str.substring(str.lastIndexOf("/") + 1);
+if ($.cookie(str)) {
+
+$("html,body").animate({ scrollTop: $.cookie(str) }, 1000);
+}
+else {
+}
+})
+
+$(window).scroll(function () {
+var str = window.location.href;
+str = str.substring(str.lastIndexOf("/") + 1);
+var top = $(document).scrollTop();
+$.cookie(str, top, { path: '/' });
+return $.cookie(str);
+})
+/*返回上次浏览位置*/
+
+
+</script>-->
+
 
 </body>
 </html>

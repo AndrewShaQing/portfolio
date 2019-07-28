@@ -8,6 +8,15 @@
    * @type {Object}
    */
 
+	
+/*! my*/
+$(document).ready(function () {
+            $(".btn-back").click(function () {
+            window.history.back();
+        });
+  })
+/*! my* over/
+	
 window.isMobile = {
 	Android: function Android() {
 		return navigator.userAgent.match(/Android/i);

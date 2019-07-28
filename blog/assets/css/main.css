@@ -2338,16 +2338,26 @@ ul {
     }
 }
 
+
+
+/* my*/
+.blog-detail-media{ padding:0 0 10px 0;}
+
+#nav{transition:.5s;}
+
+.col-md-8 p{text-indent:2em; text-align: justify; font-size: 16px;}
+/* my* over/
+
+
 /* 21. header-01
 --------------------------------------------------------------------------------*/
-
 .header {
     padding: 10px 20px;
     transition: all .3s cubic-bezier(.91, .04, .13, .99);
     position: relative;
 }
 
-.header.header--fixed {
+.header.header--fixed{
     position: fixed;
     top: 0;
     left: 0;

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<title>上门洗车小程序的选项卡设计</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+		<link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+
+	</head>
+	
+	<body>
+			<header id="nav" class="header header--fixed">
+				<div class="header__inner">
+					<div class="header__logo"><a href="blog.html"><img src="../assets/img/logo-black.png" alt="" style="width: 40px;"/></a></div>
+					<div class="navbar-toggle" id="fs-button">
+						<div class="navbar-icon"><span></span></div>
+					</div>
+				</div>
+				
+				<!-- fullscreenmenu__module -->
+				<div class="fullscreenmenu__module" trigger="#fs-button">
+					
+					<!-- overlay-menu -->
+					<nav class="overlay-menu">
+						
+						<!--  -->
+						<ul class="wil-menu-list">
+							<li><a href="blog.html">全部</a>
+							</li>
+							<li><a href="ux.html">交互设计</a>
+							</li>
+							<li><a href="#0">心得感悟</a>
+							</li>
+							<li class="current-menu-item"><a href="#0">项目作品</a>
+							</li>
+							<li><a href="../index.html" target="_blank">关于我</a>
+							</li>
+						</ul><!--  -->
+						
+					</nav><!-- End / overlay-menu -->
+					
+				</div><!-- End / fullscreenmenu__module -->
+				
+			</header><!-- End / header -->
+
+			
+			<div class="content">
+				<!-- Section -->
+				<section class="awe-section" style="padding-top: calc(0.54545vw); padding-bottom: calc(0.54545vw);">
+					<div class="container">
+						
+						<!-- page-title -->
+						<div class="page-title pb-40">
+							
+							<h2 class="page-title__title" >上门洗车小程序的选项卡设计</h2>
+							<span class="post-detail__cat"  style="color:#bbb; padding-bottom: 4px;">工作项目</span>
+							<div class="post-detail__meta"><span class="date">2019. 07. 09</span>
+							<a href="./blog.html"><span class="author" style="color:#333;">ShaQing</span></a>
+	
+							</div>
+							<div class="page-title__divider"></div>
+
+						</div><!-- End / page-title -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="awe-section bg-gray">
+					<div class="container">
+						
+						<!--  -->
+						<div>
+
+<div class="post-detail__entry row">
+<div class="col-md-8">
+<!--<h4>重要概要。</h4>-->
+<!--<b>1.重要原则。</b>-->
+									
+<p>
+选项的切换形式有两种，常见的就是独立标签，通过标签切换内容。另一种是标签与内容融合，同时切换。后者的应用范围不大，应用需要满足这几点条件：1、同一纬度不同类型；2、选项内容结构简单；3、针对选项有重要的操作需求。
+</p>
+<p>
+通过一个实际案例来解释后者的选项卡设计。
+</p>
+
+	<h4>设计方案：</h4>
+	<p>
+	这是一款上门洗车的微信小程序，用户通过小程序选择需要的洗车方式，填写自己要洗的车辆信息（车型、颜色、车牌号、位置）和联系人信息（电话），然后进行下单支付。这里重点讲述选项（选择洗车方式）的设计。
+	</p>
+	
+	
+	
+	<div style="text-align:center;  " class="post-detail__media">						
+		<video class="video"  style="width:235px; border-radius:26px; border:solid 3px #000; "  src="assets/img/work/01/c.mp4" muted  controls autoplay loop ></video>
+	</div>
+
+	
+	
+	<p>
+	首先，洗车是一种都市白领的中高频消费，一旦锁定一款洗车应用，就会有很稳定的用户商业价值。该小程序的核心目标就是实现车主足不出户，车不移步，随时随地一键下单洗车。让车主无论是在上班，还是在玩的同时，通过快速的选择下单，就有专业洗车技师把车洗干净了，免去常规洗车的等待时间，路途成本，时间精力成本等。
+	</p>
+	<p>
+	我们面对的中级用户一定是工作生活节奏很快的群体，已经用过我们的应用的情况下是需要快速便捷的选好自己中意的一款洗车服务，立马下单完成，一个字就是“快”。同时，新用户又需要查看具体的服务内容。这么一来，很明显的两个重要需求已经诞生了：1、快速选择某选项；2、查看选项的二级详情页面。
+	</p>
+	<p>
+	确切地说，该方案的选项标签和内容已经融为一体，选项的选中状态是通过对其整体的放大居中来呈现的。对于中级用户来讲，内容就是选项标签本身和对应的价格，具体的洗车流程和介绍都是次要信息。对于新用户来讲，内容却包括了选项的二级详情页面。为了同时满足这两种重要的需求，采用的方法是：点击当前的选项卡片进入该服务的二级详情页面；点击底部的“选择该服务”则直接进入确认订单页面。使选项本身作为了订单的一个提交项，这满足了文章开头的条件3---“针对选项有重要的操作需求。”
+	</p>
+	<p>
+	条件1自然很容易理解，这是所有选项设计的基本原则。条件2的意义在于，当标签与内容融合且同时切换时，选项内容结构简单有利于页面的整体效果统一和加载速度。
+	</p>
+		<p>关于选项设计的完整内容，请参考<a href="work-detail-01.html"><span class="author" style="color:#337ab7;">《移动端的选项设计》</span></a>。</p>
+
+	
+	
+	
+<!--	<div style="text-align:center;  " class="post-detail__media">						
+		<video style="width:235px; border-radius: 44px; position: absolute; z-index:1 " class="c" src="assets/img/work/01/c.mp4" muted  controls autoplay loop ></video>
+		<img style="width:254px; margin-left: -5px; position: absolute;  z-index:2; " src="assets/img/work/01/frame.png" alt="shaqing's blog" />			
+	</div>
+-->
+
+
+
+</div>
+</div>
+
+							
+								
+							</div>
+						</div><!-- End /  -->
+						
+								            
+			            <div style="margin-top: auto;" class="awe-text-center mt-50">
+<!--							<button type="button" class="md-btn md-btn--outline-primary btn btn-default btn-back">返回</button>-->
+							<a class="md-btn md-btn--outline-primary " href="blog.html">更多文章
+							</a>
+						</div>
+						
+						
+
+				</section>
+				<!-- End / Section -->
+</div>
+
+
+	<!-- Vendors-->
+	<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+	<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+	<!-- App-->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	</body>
+</html>

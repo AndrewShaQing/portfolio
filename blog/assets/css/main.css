@@ -2008,7 +2008,7 @@ ul {
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #000;
     margin-bottom: 0;
 }
@@ -2341,7 +2341,7 @@ ul {
 
 
 /* my*/
-.blog-detail-media{ padding:0 0 10px 0; width:400px;}
+.blog-media{ padding:10px 0 10px 0; width:400px;}
 
 #nav{transition:.5s;}
 

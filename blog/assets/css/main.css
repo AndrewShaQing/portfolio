@@ -2029,10 +2029,6 @@ ul {
     text-decoration: none;
 }
 
-.post-detail__media {
-    margin-bottom: 30px;
-}
-
 .post-detail__entry {
     font-size: 14px;
     padding: 10px 0 40px;
@@ -2341,13 +2337,18 @@ ul {
 
 
 /* my*/
-.blog-media{ padding:10px 0 10px 0; width:400px;}
+
+.post-detail__media {padding:10px 0 30px 0;}
+
+.media-img{padding:0 0 10px 0; width:400px;}
 
 #nav{transition:.5s;}
 
 .col-md-8 p{text-indent:2em; text-align: justify; font-size: 16px;}
 
-.media-video{width:320px}
+.media-video{width:320px; padding:0 0 0 0;}
+
+.media-video-screen{width:235px;  border-radius:26px; border:solid 3px #000; }
 
 /* my* over/
 

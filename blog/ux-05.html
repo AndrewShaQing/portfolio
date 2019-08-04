@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<title>箭头的用法</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+		<link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+
+	</head>
+	
+	<body oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false" onmouseup="document.selection.empty()">
+
+			<header id="nav" class="header header--fixed">
+				<div class="header__inner">
+					<div class="header__logo"><a href="blog.html"><img src="../assets/img/logo-black.png" alt="" style="width: 40px;"/></a></div>
+					<div class="navbar-toggle" id="fs-button">
+						<div class="navbar-icon"><span></span></div>
+					</div>
+				</div>
+				
+				<!-- fullscreenmenu__module -->
+				<div class="fullscreenmenu__module" trigger="#fs-button">
+					
+					<!-- overlay-menu -->
+					<nav class="overlay-menu">
+						
+						<!--  -->
+						<ul class="wil-menu-list">
+							<li><a href="blog.html">全部</a>
+							</li>
+							<li><a href="ux.html">交互设计</a>
+							</li>
+							<li><a href="exp.html">感悟心得</a>
+							</li>
+							<li><a href="work.html">项目</a>
+							</li>
+							<li><a href="../index.html">关于我</a>
+							</li>
+						</ul><!--  -->
+						
+					</nav><!-- End / overlay-menu -->
+					
+				</div><!-- End / fullscreenmenu__module -->
+				
+			</header><!-- End / header -->
+
+			
+			<div class="content">
+				<!-- Section -->
+				<section class="awe-section" style="padding-top: calc(0.54545vw); padding-bottom: calc(0.54545vw);">
+					<div class="container">
+						
+						<!-- page-title -->
+						<div class="page-title pb-40">
+							
+							<h2 class="page-title__title" >箭头的用法</h2>
+							<span class="post-detail__cat"  style="color:#bbb; padding-bottom: 4px;">交互设计</span>
+							<div class="post-detail__meta"><span class="date">2017. 01. 27</span>
+							<a href="./blog.html"><span class="author" style="color:#333;">ShaQing</span></a>
+	
+							</div>
+							<div class="page-title__divider"></div>
+
+						</div><!-- End / page-title -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="awe-section bg-gray">
+					<div class="container">
+						
+						<!--  -->
+						<div>
+
+<div class="post-detail__entry row">
+<div class="col-md-8">
+<!--<h4>重要概要。</h4>-->
+<!--<b>1.重要原则。</b>-->
+									
+<p>
+在app中，箭头的复用率是很高的，左箭头、右箭头，下箭头，上箭头全部可以使用，每一种代表了特殊的含义。但是，很多时候箭头又会被乱用，导致一些使用上的迷惑。貌似也没有专门写箭头用法的文章，本文我将专门来说说箭头的用法。
+</p>
+
+
+	<h4>左箭头：</h4>
+	<p>
+	左箭头=“返回back”，这几乎已经形成所有用户的共识。事实上也基本如此，99%的情景下，左箭头就是“返回上一页”。除此之外还有一个种很少见的情况，就是在左右轮播区域，用来指示左边还有内容，不过已经越来越多的触摸类界面去掉了这种指示方式，只是电脑端仍有广泛使用。因此，app设计中左箭头=返回上一页。
+	</p>
+	<div class="post-detail__media">			
+		<img class="media-img" style="width:400px;" src="assets/img/ux/05/06.jpg"/>
+	</div>
+
+	<h4>右箭头：</h4>
+	<p>
+	左和右是相反的两个方向，左箭头是返回上一页，右箭头自然就是“进入下一页”。如下图，可以把手机屏幕想像成一个固定大小的容器，背后的内容有很多，一屏装不下那么多内容，那就只好将内容组织嵌套，一屏一屏来回切换页面使用。而为了指示什么地方可以切换页面，就有了左右箭头。注意：右箭头一定要跳转新页面，千万不要和下箭头混淆在当前页面展开更多内容，这是不合适的。
+	</p>
+	<div class="post-detail__media">			
+		<img class="media-img" style="width:600px;" src="assets/img/ux/05/01.gif"/>			
+	</div>
+
+	<h4>下箭头：</h4>
+	<p>
+		下箭头的主要作用是指示该主题可以“展开更多内容”。如下左图所示，点击下箭头可以紧连着该主题展开关于该主题的更多内容的弹出层，箭头的翻转、颜色的变化、即有箭头翻转又有颜色变化，这3种呈现方式都是正确的，目的都是表示该主题处于激活状态，或者说展开的内容从属于哪个主题。
+	</p>
+	<p>
+		如下右图所示，当点击下箭头在底部弹出层展开更多内容时，箭头的样式不应该发生变化，一是因为这里的更多内容是独立呈现的，在界面上跟主题是分离的；二是因为这里存在模态遮罩层，箭头的变化是被遮罩覆盖的，它的变化就无关紧要了。当点击下箭头在主题自身区域展开更多内容时，箭头应该翻转以表示当前处于那种状态，同时下方的其它页面元素应该为其让路，往下移动。要注意两种弹出层、自身展开的各自的特点。
+	</p>
+	<div class="post-detail__media">			
+		<img class="media-img" style="width:200px; margin-right: 20px;" src="assets/img/ux/05/02.gif"/>			
+		<img class="media-img" style="width:200px; margin-left: 20px;" src="assets/img/ux/05/03.gif"/>			
+	</div>
+
+	<h4>上箭头：</h4>
+	<p>
+		上箭头的主要作用是配合下箭头“收起更多内容”。除此之外，还有“上拉（拉出）”，“返回顶部”的功能。“上拉”箭头会随着手指移动到固定位置后立马翻转为“下拉”，而“返回顶部”的箭头则固定在屏幕的特定位置，箭头不会发生特殊变化，但包含了隐藏和显示两个状态。如下图所示。
+	</p>
+	<div class="post-detail__media">			
+		<img class="media-img" style="width:200px; margin-right: 20px;" src="assets/img/ux/05/04.gif"/>			
+		<img class="media-img" style="width:200px; margin-left: 20px;" src="assets/img/ux/05/05.gif"/>			
+	</div>
+
+
+	<h4>其它：</h4>
+	<p>
+	游戏、场景体验类app的箭头设计，可能会在特定的场景下赋予更多其它的功能和含义，它们往往用来控制方向或指示操作。
+	</p>
+	
+</div>
+</div>
+
+							
+								
+							</div>
+						</div><!-- End /  -->
+						
+								            
+			            <div style="margin-top: auto;" class="awe-text-center mt-50">
+<!--							<button type="button" class="md-btn md-btn--outline-primary btn btn-default btn-back">返回</button>-->
+							<a class="md-btn md-btn--outline-primary " href="blog.html">更多文章
+							</a>
+						</div>
+						
+						
+
+				</section>
+				<!-- End / Section -->
+</div>
+
+
+	<!-- Vendors-->
+	<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+	<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+	<!-- App-->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	</body>
+</html>
